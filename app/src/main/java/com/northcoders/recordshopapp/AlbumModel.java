@@ -1,17 +1,35 @@
 package com.northcoders.recordshopapp;
 
+import com.google.gson.annotations.SerializedName;
+
 import java.time.LocalDate;
 
 public class AlbumModel {
 
+    @SerializedName("id")
     private Long id;
+
+    @SerializedName("artist")
     private String artist;
+
+    @SerializedName("albumName")
     private String albumName;
+
+    @SerializedName("releaseDate")
     private LocalDate releaseDate;
+
+    @SerializedName("price")
     private double price;
+
+    @SerializedName("stockCount")
     private int stockCount;
+
+    @SerializedName("isInStock")
     private boolean isInStock;
+
+    @SerializedName("genre")
     private String genre;
+
 
     // no args
     public AlbumModel(){}
