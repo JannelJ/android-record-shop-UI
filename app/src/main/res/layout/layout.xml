@@ -45,7 +45,7 @@
             android:id="@+id/tvGenre"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@{albumModel.genre}"
+            android:text="@{AlbumModel.genre}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvReleaseDate"
             app:layout_constraintEnd_toEndOf="parent" />
