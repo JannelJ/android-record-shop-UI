@@ -1,4 +1,4 @@
-package com.northcoders.recordshopapp;
+package com.northcoders.recordshopapp.model;
 
 import com.google.gson.annotations.SerializedName;
 

@@ -1,6 +1,6 @@
 package com.northcoders.recordshopapp.service;
 
-import com.northcoders.recordshopapp.AlbumModel;
+import com.northcoders.recordshopapp.model.AlbumModel;
 
 import java.util.List;
 

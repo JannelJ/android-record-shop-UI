@@ -4,7 +4,6 @@ import android.app.Application;
 
 import androidx.lifecycle.MutableLiveData;
 
-import com.northcoders.recordshopapp.AlbumModel;
 import com.northcoders.recordshopapp.service.AlbumAPIService;
 import com.northcoders.recordshopapp.service.RetrofitInstance;
 

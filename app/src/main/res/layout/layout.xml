@@ -3,8 +3,8 @@
 
     <data>
         <variable
-            name="albuModel"
-            type="com.northcoders.recordshopapp.AlbumModel" />
+            name="albumModel"
+            type="com.northcoders.recordshopapp.model.AlbumModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -16,7 +16,7 @@
             android:id="@+id/tvAlbumName"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@{albumModel.AlbumName"}
+            android:text="@{albumModel.albumName}"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +26,7 @@
             android:id="@+id/tvArtist"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@{album.artist}"
+            android:text="@{albumModel.artist}"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvAlbumName"
@@ -36,7 +36,7 @@
             android:id="@+id/tvReleaseDate"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@{album.releaseDate.toString()}"
+            android:text="@{albumModel.releaseDate.toString()}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvArtist"
             app:layout_constraintEnd_toEndOf="parent" />
@@ -45,7 +45,7 @@
             android:id="@+id/tvGenre"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="@{album.genre}"
+            android:text="@{albumModel.genre}"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/tvReleaseDate"
             app:layout_constraintEnd_toEndOf="parent" />
