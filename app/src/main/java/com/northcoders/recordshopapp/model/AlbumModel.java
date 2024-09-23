@@ -4,6 +4,7 @@ import androidx.databinding.BaseObservable;
 import androidx.databinding.Bindable;
 
 import com.google.gson.annotations.SerializedName;
+import com.northcoders.recordshopapp.BR;
 
 import java.time.LocalDate;
 
@@ -56,6 +57,7 @@ public class AlbumModel extends BaseObservable {
 
     public void setId(Long id) {
         this.id = id;
+        notifyPropertyChanged(BR.id);
     }
 
     @Bindable
@@ -65,6 +67,7 @@ public class AlbumModel extends BaseObservable {
 
     public void setArtist(String artist) {
         this.artist = artist;
+        notifyPropertyChanged(BR.artist);
     }
 
     @Bindable
@@ -74,6 +77,7 @@ public class AlbumModel extends BaseObservable {
 
     public void setAlbumName(String albumName) {
         this.albumName = albumName;
+        notifyPropertyChanged(BR.albumName);
     }
 
     @Bindable
@@ -83,6 +87,7 @@ public class AlbumModel extends BaseObservable {
 
     public void setReleaseDate(LocalDate releaseDate) {
         this.releaseDate = releaseDate;
+        notifyPropertyChanged(BR.releaseDate);
     }
 
     @Bindable
@@ -92,6 +97,7 @@ public class AlbumModel extends BaseObservable {
 
     public void setPrice(double price) {
         this.price = price;
+        notifyPropertyChanged(BR.price);
     }
 
     @Bindable
@@ -101,6 +107,7 @@ public class AlbumModel extends BaseObservable {
 
     public void setStockCount(int stockCount) {
         this.stockCount = stockCount;
+        notifyPropertyChanged(BR.stockCount);
     }
 
     @Bindable
@@ -110,6 +117,7 @@ public class AlbumModel extends BaseObservable {
 
     public void setInStock(boolean inStock) {
         isInStock = inStock;
+        notifyPropertyChanged(BR.inStock);
     }
 
     @Bindable
@@ -119,5 +127,6 @@ public class AlbumModel extends BaseObservable {
 
     public void setGenre(String genre) {
         this.genre = genre;
+        notifyPropertyChanged(BR.genre);
     }
 }
