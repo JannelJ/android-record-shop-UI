@@ -1,5 +1,6 @@
 package com.northcoders.recordshopapp.ui.mainactivity;
 
+import android.app.Application;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -14,6 +15,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        Application application = new Application();
+        MainActivityViewModel mainActivityViewModel = new MainActivityViewModel(application);
+        mainActivityViewModel.getAlbums();
+
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);

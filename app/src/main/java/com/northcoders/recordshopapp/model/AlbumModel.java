@@ -1,10 +1,13 @@
 package com.northcoders.recordshopapp.model;
 
+import androidx.databinding.BaseObservable;
+import androidx.databinding.Bindable;
+
 import com.google.gson.annotations.SerializedName;
 
 import java.time.LocalDate;
 
-public class AlbumModel {
+public class AlbumModel extends BaseObservable {
 
     @SerializedName("id")
     private Long id;
@@ -46,7 +49,7 @@ public class AlbumModel {
         this.isInStock = isInStock;
         this.genre = genre;
     }
-
+    @Bindable
     public Long getId() {
         return id;
     }
@@ -55,6 +58,7 @@ public class AlbumModel {
         this.id = id;
     }
 
+    @Bindable
     public String getArtist() {
         return artist;
     }
@@ -63,6 +67,7 @@ public class AlbumModel {
         this.artist = artist;
     }
 
+    @Bindable
     public String getAlbumName() {
         return albumName;
     }
@@ -71,6 +76,7 @@ public class AlbumModel {
         this.albumName = albumName;
     }
 
+    @Bindable
     public LocalDate getReleaseDate() {
         return releaseDate;
     }
@@ -79,6 +85,7 @@ public class AlbumModel {
         this.releaseDate = releaseDate;
     }
 
+    @Bindable
     public double getPrice() {
         return price;
     }
@@ -87,6 +94,7 @@ public class AlbumModel {
         this.price = price;
     }
 
+    @Bindable
     public int getStockCount() {
         return stockCount;
     }
@@ -95,6 +103,7 @@ public class AlbumModel {
         this.stockCount = stockCount;
     }
 
+    @Bindable
     public boolean isInStock() {
         return isInStock;
     }
@@ -103,6 +112,7 @@ public class AlbumModel {
         isInStock = inStock;
     }
 
+    @Bindable
     public String getGenre() {
         return genre;
     }

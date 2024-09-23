@@ -8,12 +8,12 @@ public class RetrofitInstance {
 
     private static Retrofit retrofit = null;
 
-    private static final String BASE_URL = "http://192.168.1.165:8080/api/v1/albums/";
+    private static final String BASE_URL = "http://192.168.1.165:8080/api/v1/";
 
     public static AlbumAPIService getService() {
         if(retrofit == null) {
             HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
-            logging.setLevel(HttpLoggingInterceptor.Level.BASIC);
+            logging.setLevel(HttpLoggingInterceptor.Level.BODY);
 
             OkHttpClient client = new OkHttpClient.Builder()
                     .addInterceptor(logging)
