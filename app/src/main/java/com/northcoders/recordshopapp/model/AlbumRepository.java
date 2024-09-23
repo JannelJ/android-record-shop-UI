@@ -23,6 +23,10 @@ public class AlbumRepository {
         this.application = application;
     }
 
+    public AlbumRepository() {
+        
+    }
+
     public MutableLiveData<List<AlbumModel>> getMutableLiveData() {
         AlbumAPIService albumApiService = RetrofitInstance.getService();
         Call<List<AlbumModel>> call = albumApiService.getAllAlbums();
