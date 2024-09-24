@@ -20,7 +20,7 @@ public class AlbumModel extends BaseObservable {
     private String albumName;
 
     @SerializedName("releaseDate")
-    private LocalDate releaseDate;
+    private String releaseDate;
 
     @SerializedName("price")
     private double price;
@@ -40,7 +40,7 @@ public class AlbumModel extends BaseObservable {
 
 
     // all args
-    public AlbumModel(Long id, String artist, String albumName, LocalDate releaseDate, double price, int stockCount, boolean isInStock, String genre) {
+    public AlbumModel(Long id, String artist, String albumName, String releaseDate, double price, int stockCount, boolean isInStock, String genre) {
         this.id = id;
         this.artist = artist;
         this.albumName = albumName;
@@ -81,11 +81,11 @@ public class AlbumModel extends BaseObservable {
     }
 
     @Bindable
-    public LocalDate getReleaseDate() {
+    public String getReleaseDate() {
         return releaseDate;
     }
 
-    public void setReleaseDate(LocalDate releaseDate) {
+    public void setReleaseDate(String releaseDate) {
         this.releaseDate = releaseDate;
         notifyPropertyChanged(BR.releaseDate);
     }

@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
     private ArrayList<AlbumModel> albumModelList;
     private AlbumAdapter albumAdapter;
     private MainActivityViewModel mainActivityViewModel;
-    private ViewDataBinding activityMainBinding;
+    private ActivityMainBinding activityMainBinding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

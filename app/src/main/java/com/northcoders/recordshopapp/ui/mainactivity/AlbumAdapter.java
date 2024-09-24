@@ -1,6 +1,7 @@
 package com.northcoders.recordshopapp.ui.mainactivity;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
@@ -30,6 +31,7 @@ public class AlbumAdapter extends RecyclerView.Adapter<AlbumAdapter.AlbumViewHol
         public AlbumViewHolder(LayoutBinding layoutBinding) {
             super(layoutBinding.getRoot());
             this.layoutBinding = layoutBinding;
+            Log.i("ViewHolder", "Item Created.");
         }
     }
 
